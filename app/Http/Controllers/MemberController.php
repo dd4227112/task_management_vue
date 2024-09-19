@@ -16,12 +16,11 @@ class MemberController extends Controller
         $code = 200;
         $data = [];
         if (!$members->isEmpty()) {
-            $message = 'Member List';
             $data = $members;
         } else {
             $message = 'Member Not Found';
         }
-        return response()->json(['message' => $message, 'data' => $data], $code);
+        return response()->json(['data' => $data], $code);
     }
     public function create(Request $request)
     {

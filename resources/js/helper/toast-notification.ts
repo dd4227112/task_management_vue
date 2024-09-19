@@ -15,7 +15,7 @@ const toast = useToast();
 export function showMessage(message: string, type:string) {
     toast.success(message, {
         type:type,
-        position: type=='error'?'bottom-right':'top-right',
+        position: type=='error'?'top':'top-right',
         duration: 3000,
         dismissible: true,
         pauseOnHover:true

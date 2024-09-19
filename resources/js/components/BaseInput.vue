@@ -5,9 +5,9 @@
 
 <script setup lang="ts">
 defineProps<{
-    modelValue: string,
+    modelValue?: string,
     type?: string,
-    id: string
+    id?: string
 }>()
 const emit = defineEmits<{
     (event: 'update:modelValue', val: any): void
